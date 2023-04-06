@@ -1,0 +1,494 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.navigation_list{
+    display:inline-block;
+    font-size:25px;
+    margin-left: 22px;
+    padding: 3px;
+    
+}
+/* .nav-design ol{
+    background: rgba(190, 194, 197, 0.308);
+    height: px;
+} */
+ol{
+    text-align: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+}
+.nav-design ol li a{
+    text-decoration: none;
+    color: #000;
+    padding: 3px 18px;
+    border: 1px solid transparent;
+    transition: 1.2s ease;
+
+}
+.navigation_list a:hover{
+    background-color: rgb(172, 172, 172);
+    color: #000;
+}
+
+.navigation_link_prb{
+    text-decoration: none;
+    color:black;
+}
+/* .name{
+    color:blue;
+    padding: 8px;
+} */
+
+.name-color{
+    color: purple;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.home-line{
+    margin-left: 300px;
+    padding: 30px;
+    display: flex;
+    margin-top: 28px;
+}
+
+.home-details{
+    padding-top: 50px;
+    margin-left: -140px;
+}
+.home-image{
+    margin-left: 60%;
+}
+
+.fast-img{
+    width: auto; 
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 2%;
+    margin-left: -40px;
+}
+.sec-img{
+    width: auto; 
+    height: 300px;
+    margin-top: 50px;
+    margin-left: 92px;
+    border-radius: 2%;
+}
+
+.about-line{
+   background-color: rgb(231, 226, 226);
+    /*background-color: rgba(247, 230, 252, 0.692);*/
+   /*background-color: rgba(211, 182, 219, 0.479);*/
+}
+.about-line{
+    padding: 50px;
+    display: flex;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+.about-text{
+    padding: 100px;
+    padding-left: 550px;
+    margin-top: -52px;
+}
+.about-text h1{
+    margin-bottom: 15px;
+}
+.about-text .p-text{
+    padding-right: 16px;
+    font-weight: lighter;
+    text-align: justify;
+    line-height: 1.5;
+}
+.fst-project{
+    border:1px solid black;
+    border-radius: 2%;
+}
+.sec-project{
+    border:1px solid black;
+    border-radius: 2%;
+}
+.trd-project{
+    border:1px solid black;
+    border-radius: 2%;
+}
+.button{
+    padding: 10px;
+    background-color: rgb(211, 211, 12);
+}
+.button a{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    padding: 50px;
+    width: 700px;
+    text-align: center;
+}
+.project{
+    width: 500px;
+    float:left;
+    
+}
+.project h1{
+    margin-right: -30px;
+}
+.my-latest{
+    width: 100%;
+    font-size: 50px;
+    /* float: right; */
+}
+.name-col{
+    color: rgb(26, 165, 26);
+    font-size: 50px;
+}
+.project-name{
+   padding-left: 15px;
+   float:right;
+   width: 100%;
+   height: auto;
+   padding-bottom: 0px;
+   margin-right: 120px;
+}
+
+.body-item{
+    border: 2px solid black;
+    width: 30%;
+    margin-right: 3%;
+    padding: 10px;
+    height: 420px;
+    padding-bottom:20px;
+    border-radius: 2%;
+}
+.project-line{
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    text-align: center;
+    margin-left: 35%;
+}
+.project-body{
+    display: flex;
+    padding: 50px;
+    margin-right: -60px;
+}
+.h-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 31px;
+    color: rgb(158, 33, 216);
+}
+footer{
+    margin-top: 60px;
+    width:auto;
+}
+.footer-info{
+    color: white;
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+/* .footer-link{
+    padding-bottom: 50px;
+    text-align: center;
+    background-color: black;
+    display: flex;
+   
+} */
+
+/* .link-line{
+    padding-bottom: 50px;
+    text-align: center;
+    color: rgb(21, 127, 189);
+    background-color: black; 
+    display: flex;
+    margin-left: -48px;
+    justify-content: center;
+}
+.facebook-link a{
+    display: flex;
+    padding-left: 690px;
+    padding-right: 10px;
+    color: rgb(21, 127, 189);
+    text-decoration: none;
+}
+.linkdin-line a{
+    padding-left: 10px;
+    color: rgb(21, 127, 189);
+    text-decoration: none;
+    padding-right: 10px;
+}
+.github-link a{
+    text-decoration: none;
+    padding-left: 10px;
+    color: rgb(21, 127, 189);
+} */
+
+.link-line{
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "f l g";
+    width: 100%;
+    background-color: #000;
+}
+
+.facebook-link{
+    grid-area: f;
+    width: 100%;
+}
+.linkdin-line{
+    grid-area: l;
+    width: 100%;
+}
+.github-link{
+    grid-area: g;
+    width: 100%;
+}
+
+.facebook-link a{
+    display: block;
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(21, 127, 189);
+}
+
+.linkdin-line a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(21, 127, 189);
+}
+
+.github-link a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(21, 127, 189);
+}
+
+
+
+
+
+
+/* about page */
+
+
+.all_content{
+    padding: 4%;
+}
+.ssc{
+    height: 300px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.ssc_pic{
+    width: 40%;
+    float: left;
+}
+
+.ssc_pic img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.ssc_content{
+    width: auto;
+    float: left;
+    margin-left: 30px;
+}
+.ssc_content h2{
+    color: purple;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.all_content .hr{
+    width: 60%;
+    margin-left: 42%;
+}
+
+.hsc{
+    margin-top: 40px;
+    height: 300px;
+    width: 100%;
+}
+
+.hsc_pic{
+    width: 40%;
+    float: left;
+   
+}
+
+.hsc_pic img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.hsc_content{
+    width: auto;
+    float: left;
+    margin-left: 30px;
+}
+.hsc_content h2{
+    color: purple;
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+.bsc{
+    margin-top: 40px;
+    height: 300px;
+    width: 100%;
+}
+
+.bsc_pic{
+    width: 40%;
+    float: left;
+}
+
+.bsc_pic img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.bsc_content{
+    width: auto;
+    float: left;
+    margin-left: 30px;
+}
+.bsc_content h2{
+    color: purple;
+    font-size: 40px;
+    font-weight: lighter;
+}
+/* projects */
+
+.project-body .body-item{
+    transition: all 0.9s;
+}
+.project-body .body-item:hover {
+    transform: scale(1.1);
+}
+
+/*Contscts*/
+
+.contact{
+    margin-top: 60px;
+    text-align: center;
+    
+}
+.contact h2{
+    size: 100px;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+    margin-left: 26%;
+    margin-top: 10px;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 20px;
+    color: crimson;
+}
+
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+
+}
+.contact .contact-content .info .sub-title a{
+    text-decoration: none;
+}
+
+
+.contact .right form .fields{
+    display: flex;
+    margin-top: 50px;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 22px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 30px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height:100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins' sans-serif;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    padding-bottom: -8px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 47px;
+    width: 170px;
+    margin-left: 37%;
+    margin-top: 70px;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid crimson; */
+    /* background: crimson; */
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    
+} 
+.contact .right form .button button:hover{
+    color: crimson;
+    background: none;
+}
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
